@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "weathermod",
+	"version": "1.0.0",
+	"name": "Weather Mod",
+	"description": "Configure weather settings.",
+	"authors": [
+		"Kim-Lan"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/weathermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kimlan.weathermod.WeatherMod"
+		]
+	},
+	"mixins": [
+		"weathermod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
