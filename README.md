@@ -1,3 +1,3 @@
-# Weather Tuning - Fabric mod
+# WeatherTuning - Fabric mod
 
 [Modrinth](https://modrinth.com/mod/weather-tuning)
