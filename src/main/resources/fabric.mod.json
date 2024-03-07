@@ -3,7 +3,7 @@
 	"id": "weathertuning",
 	"version": "1.0.0",
 	"name": "WeatherTuning",
-	"description": "Configure weather settings.",
+	"description": "Fine-tuning for vanilla weather mechanics.",
 	"authors": [
 		"Kim-Lan"
 	],
