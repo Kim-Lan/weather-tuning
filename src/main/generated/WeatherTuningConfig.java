@@ -3,10 +3,13 @@ package com.kimlan.weathertuning;
 import blue.endless.jankson.Jankson;
 import io.wispforest.owo.config.ConfigWrapper;
 import io.wispforest.owo.config.Option;
+import io.wispforest.owo.util.Observable;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Consumer;
 
-public class WeatherConfig extends ConfigWrapper<com.kimlan.weathertuning.WeatherConfigModel> {
+public class WeatherTuningConfig extends ConfigWrapper<com.kimlan.weathertuning.WeatherTuningConfigModel> {
 
     public final Keys keys = new Keys();
 
@@ -15,22 +18,22 @@ public class WeatherConfig extends ConfigWrapper<com.kimlan.weathertuning.Weathe
     private final Option<java.util.List<java.lang.Integer>> clearThunderWeatherDuration = this.optionForKey(this.keys.clearThunderWeatherDuration);
     private final Option<java.util.List<java.lang.Integer>> thunderWeatherDuration = this.optionForKey(this.keys.thunderWeatherDuration);
 
-    private WeatherConfig() {
-        super(com.kimlan.weathertuning.WeatherConfigModel.class);
+    private WeatherTuningConfig() {
+        super(com.kimlan.weathertuning.WeatherTuningConfigModel.class);
     }
 
-    private WeatherConfig(Consumer<Jankson.Builder> janksonBuilder) {
-        super(com.kimlan.weathertuning.WeatherConfigModel.class, janksonBuilder);
+    private WeatherTuningConfig(Consumer<Jankson.Builder> janksonBuilder) {
+        super(com.kimlan.weathertuning.WeatherTuningConfigModel.class, janksonBuilder);
     }
 
-    public static WeatherConfig createAndLoad() {
-        var wrapper = new WeatherConfig();
+    public static WeatherTuningConfig createAndLoad() {
+        var wrapper = new WeatherTuningConfig();
         wrapper.load();
         return wrapper;
     }
 
-    public static WeatherConfig createAndLoad(Consumer<Jankson.Builder> janksonBuilder) {
-        var wrapper = new WeatherConfig(janksonBuilder);
+    public static WeatherTuningConfig createAndLoad(Consumer<Jankson.Builder> janksonBuilder) {
+        var wrapper = new WeatherTuningConfig(janksonBuilder);
         wrapper.load();
         return wrapper;
     }
