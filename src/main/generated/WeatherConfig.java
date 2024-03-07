@@ -1,15 +1,12 @@
-package com.kimlan.weathermod;
+package com.kimlan.weathertuning;
 
 import blue.endless.jankson.Jankson;
 import io.wispforest.owo.config.ConfigWrapper;
 import io.wispforest.owo.config.Option;
-import io.wispforest.owo.util.Observable;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.function.Consumer;
 
-public class WeatherConfig extends ConfigWrapper<com.kimlan.weathermod.WeatherConfigModel> {
+public class WeatherConfig extends ConfigWrapper<com.kimlan.weathertuning.WeatherConfigModel> {
 
     public final Keys keys = new Keys();
 
@@ -19,11 +16,11 @@ public class WeatherConfig extends ConfigWrapper<com.kimlan.weathermod.WeatherCo
     private final Option<java.util.List<java.lang.Integer>> thunderWeatherDuration = this.optionForKey(this.keys.thunderWeatherDuration);
 
     private WeatherConfig() {
-        super(com.kimlan.weathermod.WeatherConfigModel.class);
+        super(com.kimlan.weathertuning.WeatherConfigModel.class);
     }
 
     private WeatherConfig(Consumer<Jankson.Builder> janksonBuilder) {
-        super(com.kimlan.weathermod.WeatherConfigModel.class, janksonBuilder);
+        super(com.kimlan.weathertuning.WeatherConfigModel.class, janksonBuilder);
     }
 
     public static WeatherConfig createAndLoad() {

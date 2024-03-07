@@ -1,4 +1,4 @@
-package com.kimlan.weathermod;
+package com.kimlan.weathertuning;
 
 import io.wispforest.owo.config.annotation.Config;
 import io.wispforest.owo.config.annotation.PredicateConstraint;
@@ -6,8 +6,8 @@ import io.wispforest.owo.config.annotation.PredicateConstraint;
 import java.util.ArrayList;
 import java.util.List;
 
-@Config(name = "weatherconfig", wrapperName = "WeatherConfig")
-public class WeatherConfigModel {
+@Config(name = "weather-tuning-config", wrapperName = "WeatherTuningConfig")
+public class WeatherTuningConfigModel {
 
     @PredicateConstraint("predicateFunction")
     public List<Integer> clearWeatherDuration = new ArrayList<Integer>(List.of(12000, 180000));

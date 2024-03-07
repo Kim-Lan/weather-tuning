@@ -1,6 +1,6 @@
-package com.kimlan.weathermod.mixin;
+package com.kimlan.weathertuning.mixin;
 
-import static com.kimlan.weathermod.WeatherMod.*;
+import static com.kimlan.weathertuning.WeatherTuning.*;
 
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.intprovider.IntProvider;

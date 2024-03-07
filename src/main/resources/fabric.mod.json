@@ -1,26 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "weathermod",
+	"id": "weathertuning",
 	"version": "1.0.0",
-	"name": "Weather Mod",
+	"name": "Weather Tuning",
 	"description": "Configure weather settings.",
 	"authors": [
 		"Kim-Lan"
 	],
 	"contact": {
 		"homepage": "https://github.com/Kim-Lan",
-		"sources": "https://github.com/Kim-Lan/weather-mod"
+		"sources": "https://github.com/Kim-Lan/weather-tuning"
 	},
 	"license": "MIT",
-	"icon": "assets/weathermod/icon.png",
+	"icon": "assets/weathertuning/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.kimlan.weathermod.WeatherMod"
+          "com.kimlan.weathertuning.WeatherTuning"
 		]
 	},
 	"mixins": [
-		"weathermod.mixins.json"
+		"weathertuning.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
