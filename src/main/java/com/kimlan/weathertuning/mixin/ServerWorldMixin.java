@@ -22,7 +22,7 @@ public class ServerWorldMixin {
     private int redirectThunderWeatherDuration(IntProvider instance, Random random) {
         int duration = thunderWeatherDurationProvider.get(random);
         if (CONFIG.printToConsole()) {
-            LOGGER.info("[WeatherTuning] Thunder weather duration set to " + duration);
+            LOGGER.info("[Weather Tuning] Thunder weather duration set to " + duration);
         }
         return duration;
     }
@@ -37,7 +37,7 @@ public class ServerWorldMixin {
     private int redirectClearThunderWeatherDuration(IntProvider instance, Random random) {
         int duration = clearThunderWeatherDurationProvider.get(random);
         if (CONFIG.printToConsole()) {
-            LOGGER.info("[WeatherTuning] Clear thunder weather duration set to " + duration);
+            LOGGER.info("[Weather Tuning] Clear thunder weather duration set to " + duration);
         }
         return duration;
     }
@@ -52,7 +52,7 @@ public class ServerWorldMixin {
     private int redirectRainWeatherDuration(IntProvider instance, Random random) {
         int duration = rainWeatherDurationProvider.get(random);
         if (CONFIG.printToConsole()) {
-            LOGGER.info("[WeatherTuning] Rain weather duration set to " + duration);
+            LOGGER.info("[Weather Tuning] Rain weather duration set to " + duration);
         }
         return duration;
     }
@@ -67,7 +67,7 @@ public class ServerWorldMixin {
     private int redirectClearWeatherDuration(IntProvider instance, Random random) {
         int duration = clearWeatherDurationProvider.get(random);
         if (CONFIG.printToConsole()) {
-            LOGGER.info("[WeatherTuning] Clear weather duration set to " + duration);
+            LOGGER.info("[Weather Tuning] Clear weather duration set to " + duration);
         }
         return duration;
     }
