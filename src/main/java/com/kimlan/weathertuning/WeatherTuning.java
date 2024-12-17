@@ -11,7 +11,7 @@ public class WeatherTuning implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("weathertuning");
+    public static final Logger LOGGER = LoggerFactory.getLogger("weather-tuning");
 
 	public static final WeatherTuningConfig CONFIG = WeatherTuningConfig.createAndLoad();
 	public static final IntProvider clearWeatherDurationProvider = UniformIntProvider.create(CONFIG.clearWeatherDuration().get(0), CONFIG.clearWeatherDuration().get(1));
@@ -26,6 +26,6 @@ public class WeatherTuning implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("[WeatherTuning] Initialized!");
+		LOGGER.info("[Weather Tuning] Initialized!");
 	}
 }
